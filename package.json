@@ -1,0 +1,36 @@
+{
+	"name": "Starter WordPress Theme",
+	"version": "1.0.0",
+	"description": "By Dennis Kjellin",
+	"main": "index.js",
+	"devDependencies": {
+		"browser-sync": "^2.29.3",
+		"gulp": "^4.0.2",
+		"gulp-autoprefixer": "^8.0.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-purgecss": "^5.0.0",
+		"gulp-sass": "^5.1.0",
+		"gulp-terser": "^2.1.0",
+		"node-sass": "^9.0.0",
+		"sass": "^1.66.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "gulp"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/denniskjellin/starter-dennisk.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/denniskjellin/starter-dennisk/issues"
+	},
+	"homepage": "https://github.com/denniskjellin/starter-dennisk#readme",
+	"dependencies": {
+		"bootstrap": "^5.3.1",
+		"bootstrap-icons": "^1.11.0"
+	}
+}
