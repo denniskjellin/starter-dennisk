@@ -2,7 +2,6 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const terser = require('gulp-terser');
-const purgecss = require('gulp-purgecss');
 
 // Import Bootstrap styles
 const bootstrapSass = 'node_modules/bootstrap/scss/bootstrap.scss';
@@ -33,20 +32,6 @@ gulp.task('styles', function () {
 	return gulp.src('assets/sass/*.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('./'));
 });
 
-// Purge unused CSS from style.css and create style.min.css
-gulp.task('purgecss', function () {
-	return gulp
-		.src('style.css') // Modify to the path of your main CSS file
-		.pipe(
-			purgecss({
-				content: ['**/*.php'], // Use PHP files as content to scan for used CSS
-				// Add any additional options as needed
-			})
-		)
-		.pipe(concat('style.min.css'))
-		.pipe(gulp.dest('assets/css/')); // Change the destination to 'assets/css/'
-});
-
 // Watch for changes
 gulp.task('watch', function () {
 	gulp.watch('assets/sass/**/*.scss', gulp.series('styles'));
@@ -56,4 +41,4 @@ gulp.task('watch', function () {
 });
 
 // Define a default task that includes "purgecss" and other tasks
-gulp.task('default', gulp.series('bootstrap', 'bootstrap-js', 'styles', 'purgecss', 'watch'));
+gulp.task('default', gulp.series('bootstrap', 'bootstrap-js', 'styles', 'watch'));
