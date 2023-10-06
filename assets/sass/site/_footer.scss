@@ -1,5 +1,8 @@
 /*--------------------------------------------------------------
-# Site styles, imported in 'style.scss' in sass root.
+# Footer styling
 --------------------------------------------------------------*/
 
-@import 'site/footer';
+.footer_wrapper {
+	background-color: #343a40;
+	margin-top: auto;
+}
