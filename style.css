@@ -17,6 +17,8 @@ Tags: Bootstrap 5, Bootstrap Icons
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11881,4 +11883,75 @@ textarea.form-control-lg {
 --------------------------------------------------------------*/
 .footer_wrapper {
   margin-top: auto;
+}
+
+/* Grey bottom border-dash that goes under the h1-title */
+.dash_divider::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
+}
+
+/* Tiny slash divider */
+.slash_divider::after {
+  content: "/";
+  margin: 0 0.25rem; /* Adjust the spacing as needed */
+  color: #e5e5e5;
+}
+
+/*--------------------------------------------------------------
+# Imported fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+span,
+a,
+li,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Styling for(post page) & content-post.php
+--------------------------------------------------------------*/
+.post_item {
+  padding: 1rem 0rem 1rem 0rem;
+  /* Title of the post */
+}
+.post_item a {
+  text-decoration: none;
+  color: black;
+}
+.post_item .post_info {
+  color: grey;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.post_item .post_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }

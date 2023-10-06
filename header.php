@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="d-flex flex-column" <?php body_class();?>>
+<body class="d-flex flex-column">
     <?php wp_body_open(); ?>
 
     <div id="page" class="site min-vh-100 d-flex flex-column">
@@ -53,4 +53,4 @@
             </div>
         </nav>
         <div class="page_content">
-        
+            <main>

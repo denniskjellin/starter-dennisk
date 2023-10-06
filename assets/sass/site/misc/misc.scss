@@ -1,0 +1,16 @@
+/* Grey bottom border-dash that goes under the h1-title */
+.dash_divider::after {
+	content: '';
+	display: block;
+	width: 10%;
+	height: 1px;
+	background-color: #e5e5e5;
+	margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
+}
+
+/* Tiny slash divider */
+.slash_divider::after {
+	content: '/';
+	margin: 0 0.25rem; /* Adjust the spacing as needed */
+	color: #e5e5e5;
+}

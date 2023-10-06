@@ -1,3 +1,4 @@
+</main>
 </div>
 <section class="footer_wrapper">
     <footer class="bg-secondary text-white">
