@@ -2,7 +2,6 @@
 
 /**
  * Enqueue scripts and styles
- *
  * @author Dennis Kjellin
  * @package DennisK
  */
