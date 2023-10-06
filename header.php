@@ -8,10 +8,10 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php body_class();?>>
+<body class="d-flex flex-column" <?php body_class();?>>
     <?php wp_body_open(); ?>
 
-    <div id="page" class="site test">
+    <div id="page" class="site min-vh-100 d-flex flex-column">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -52,4 +52,4 @@
                 </div>
             </div>
         </nav>
-        <div class="wrapper">
+        <div class="page_content">

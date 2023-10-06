@@ -1,5 +1,5 @@
 </div>
-<section class="footer-area">
+<section class="footer_wrapper">
     <footer class="bg-secondary text-white">
         <div class="container p-4">
             <div class="row">
