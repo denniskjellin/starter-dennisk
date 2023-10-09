@@ -17,14 +17,14 @@ gulp.task('bootstrap', function () {
 // Compile Bootstrap JavaScript
 gulp.task('bootstrap-js', function () {
 	return gulp
-		.src([bootstrapJs, '/assets/js/scripts/*.js'])
+		.src([bootstrapJs, 'assets/js/*.js'])
 		.pipe(concat('main.js'))
 		.pipe(
 			terser().on('error', function (e) {
 				console.log(e);
 			})
 		)
-		.pipe(gulp.dest('./assets/js/'));
+		.pipe(gulp.dest('assets/js/'));
 });
 
 // Compile custom Sass
