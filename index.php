@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php heroImage(); ?>
+<?php hero_image(); ?>
 
 
 
