@@ -11876,6 +11876,9 @@ textarea.form-control-lg {
 --------------------------------------------------------------*/
 /* Imports */
 /*--------------------------------------------------------------
+# Theme colors
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 # Site styles, imported in 'style.scss' in sass root.
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -11883,6 +11886,10 @@ textarea.form-control-lg {
 --------------------------------------------------------------*/
 .footer_wrapper {
   margin-top: auto;
+}
+.footer_wrapper footer {
+  background-color: black;
+  color: white;
 }
 
 /* Grey bottom border-dash that goes under the h1-title */
@@ -11938,6 +11945,7 @@ button {
 --------------------------------------------------------------*/
 .post_item {
   padding: 1rem 0rem 1rem 0rem;
+  max-width: 85ch;
   /* Title of the post */
 }
 .post_item a {

@@ -6,7 +6,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post_item'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('post_item mx-auto'); ?>>
     <?php if ( has_post_thumbnail() ) : ?>
     <div class="post_thumb"><?php the_post_thumbnail(); ?></div>
     <?php endif; ?>
