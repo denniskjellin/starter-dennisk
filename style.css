@@ -11920,8 +11920,7 @@ textarea.form-control-lg {
 # Hero section component with essential styles
 --------------------------------------------------------------*/
 /* Container div with background-image*/
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("assets/images/ocean.jpg");
+.hero_image {
   height: calc(100vh - 56px);
   background-position: center;
   background-repeat: no-repeat;
@@ -11931,7 +11930,7 @@ textarea.form-control-lg {
   /* Scroll down Bootstrap icon that goes to content */
   /* Keyframe animation that makes the Bootstraå icon pulsate */
 }
-.hero-image .hero-text {
+.hero_image .hero_text {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -11939,10 +11938,10 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
   color: white;
 }
-.hero-image .hero-text h1, .hero-image .hero-text .h1 {
+.hero_image .hero_text h1, .hero_image .hero_text .h1 {
   font-weight: bolder;
 }
-.hero-image .scroll-down-arrow {
+.hero_image .scroll-down-arrow {
   position: absolute;
   bottom: 20px; /* Adjust this value to position the arrow vertically */
   left: 50%;
