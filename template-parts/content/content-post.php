@@ -12,9 +12,9 @@
     <?php endif; ?>
     <?php 
             if ( is_single() ) :
-                the_title('<h2 class="post_title">', '</h2>' );
+                the_title('<h2 class="post_title solid_underline">', '</h2>' );
             else:
-                the_title( sprintf( '<h2 class="post_title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+                the_title( sprintf( '<h2 class="post_title solid_underline"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
             endif; 
         ?>
     <h6 class="post_info">
