@@ -11929,8 +11929,11 @@ textarea.form-control-lg {
   /* Title text */
   /* Scroll down Bootstrap icon that goes to content */
   /* Keyframe animation that makes the Bootstraå icon pulsate */
+  /* Media queries 
+  * Custom sizes for the scroll down arrow and title text
+  */
 }
-.hero_image .hero_text {
+.hero_image .hero_content {
   text-align: center;
   position: absolute;
   top: 50%;
@@ -11938,20 +11941,19 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
   color: white;
 }
-.hero_image .hero_text h1, .hero_image .hero_text .h1 {
-  font-size: 4rem;
-  font-weight: bolder;
-}
 .hero_image .scroll-down-arrow {
   position: absolute;
-  bottom: 20px; /* Adjust this value to position the arrow vertically */
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 2rem;
+  left: 45%;
   color: white;
-  font-size: 3rem;
   opacity: 1;
   transition: opacity 1s ease 0s;
   animation: pulsate 1.5s infinite;
+  font-size: 2.8rem;
+}
+.hero_image h1, .hero_image .h1 {
+  font-weight: bolder;
+  font-size: 2rem;
 }
 @keyframes pulsate {
   0% {
@@ -11965,6 +11967,28 @@ textarea.form-control-lg {
   100% {
     transform: scale(1);
     color: white; /* Return to initial color */
+  }
+}
+@media (min-width: 576px) {
+  .hero_image .scroll-down-arrow {
+    left: 47%;
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero_image h1, .hero_image .h1 {
+    font-size: 3rem;
+  }
+  .hero_image .scroll-down-arrow {
+    left: 48%;
+  }
+}
+@media (min-width: 1200px) {
+  .hero_image h1, .hero_image .h1 {
+    font-size: 4rem;
+  }
+  .hero_image .scroll-down-arrow {
+    left: 48.8%;
   }
 }
 
@@ -12065,7 +12089,7 @@ button {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 0.7rem 2rem;
+  padding: 0.7rem 3rem;
   border-radius: 1px;
   transition: 0.4s;
   margin-top: 2rem;
@@ -12076,4 +12100,10 @@ button {
   background-color: #0bb4aa;
   color: white;
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .btn-hero {
+    padding: 0.7rem 2rem;
+  }
 }
