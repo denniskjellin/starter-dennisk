@@ -11928,7 +11928,7 @@ textarea.form-control-lg {
   position: relative;
   /* Title text */
   /* Scroll down Bootstrap icon that goes to content */
-  /* Keyframe animation that makes the Bootstraå icon pulsate */
+  /* Keyframe animation that makes the Bootstrap icon pulsate */
   /* Media queries 
   * Custom sizes for the scroll down arrow and title text
   */
@@ -11958,7 +11958,7 @@ textarea.form-control-lg {
 @keyframes pulsate {
   0% {
     transform: scale(1);
-    color: white; /* Initial color */
+    color: white;
   }
   50% {
     transform: scale(1.1);
@@ -11966,7 +11966,7 @@ textarea.form-control-lg {
   }
   100% {
     transform: scale(1);
-    color: white; /* Return to initial color */
+    color: white;
   }
 }
 @media (min-width: 576px) {

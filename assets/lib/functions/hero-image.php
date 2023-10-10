@@ -18,7 +18,7 @@ function hero_image() {
     ?>
     </div>
     <div>
-        <a href="#news_content" aria-label="Scroll down to news content">
+        <a title="Scroll down to news content" href="#news_content" aria-label="Scroll down to news content">
             <i class="bi bi-chevron-double-down scroll-down-arrow"></i>
         </a>
     </div>
