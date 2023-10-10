@@ -18,11 +18,10 @@
             endif; 
         ?>
     <h6 class="post_info">
-        <span class="slash_divider"><?php echo esc_html_e('by '); ?><a class="underline-anchor"
-                href="<?php echo esc_url(get_author_posts_url( get_the_author_meta('ID')));?>">
-                <?php esc_html(the_author()); ?></a> </span>
-        <span
-            class="slash_divider"><?php echo esc_html(get_the_date('F ')); echo esc_html(get_the_date('j, ')); echo esc_html(get_the_date('Y')); ?></span>
+        <?php echo esc_html_e('by '); ?><a href="<?php echo esc_url(get_author_posts_url( get_the_author_meta('ID')));?>">
+            <?php esc_html(the_author()); ?></a>
+
+        <?php echo esc_html(get_the_date('F ')); echo esc_html(get_the_date('j, ')); echo esc_html(get_the_date('Y')); ?>
     </h6>
     <?php the_excerpt(); ?>
     <span class="dash_divider"></span>

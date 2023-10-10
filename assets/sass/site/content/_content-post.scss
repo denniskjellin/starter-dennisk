@@ -23,3 +23,13 @@
 		margin-bottom: 0.5rem;
 	}
 }
+
+.post_info a::after {
+	content: ' / ';
+	color: $pseudo-detail;
+}
+
+.post_info::after {
+	content: ' / ';
+	color: $pseudo-detail;
+}
