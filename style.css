@@ -12043,6 +12043,10 @@ textarea.form-control-lg {
   margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
 }
 
+.underline-anchor {
+  border-bottom: 1px solid #e5e5e5;
+}
+
 /*--------------------------------------------------------------
 # Imported fonts
 --------------------------------------------------------------*/
