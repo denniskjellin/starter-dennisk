@@ -3,7 +3,7 @@
 
 <div id="news_content" class="container mt-5 mb-5">
     <div class="col-md-12 text-center">
-        <h2 class="solid_underline text-uppercase fw-bold">Latest Posts</h2>
+        <h2 class="heading text-uppercase fw-bold">Latest Posts</h2>
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 

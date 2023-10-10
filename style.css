@@ -11892,6 +11892,7 @@ textarea.form-control-lg {
 .post_item a {
   text-decoration: none;
   color: black;
+  font-family: "Montserrat", sans-serif;
 }
 .post_item .post_info {
   color: #575757;
@@ -11913,6 +11914,24 @@ textarea.form-control-lg {
 .post_info::after {
   content: " / ";
   color: #e5e5e5;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 1.5rem auto;
+}
+
+.post_item::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
 }
 
 /*--------------------------------------------------------------
@@ -12024,37 +12043,6 @@ textarea.form-control-lg {
   .hero_image .scroll-down-arrow {
     left: 48.8%;
   }
-}
-
-/* Grey bottom border-dash that goes under the h1-title */
-.solid_underline::after {
-  content: "";
-  display: block;
-  width: 10%;
-  height: 1px;
-  background-color: #e5e5e5;
-  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
-}
-
-/* Tiny slash divider */
-.slash_divider::after {
-  content: "/";
-  margin: 0 0.25rem; /* Adjust the spacing as needed */
-  color: #e5e5e5;
-}
-
-.underline_wide::after {
-  content: "";
-  display: block;
-  width: 50%;
-  height: 1px;
-  background-color: #e5e5e5;
-  opacity: 0.5;
-  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
-}
-
-.underline-anchor {
-  border-bottom: 1px solid #e5e5e5;
 }
 
 /*--------------------------------------------------------------
