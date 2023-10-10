@@ -17,7 +17,7 @@ gulp.task('bootstrap', function () {
 // Compile Bootstrap JavaScript
 gulp.task('bootstrap-js', function () {
 	return gulp
-		.src([bootstrapJs, 'assets/js/*.js'])
+		.src([bootstrapJs])
 		.pipe(concat('main.js'))
 		.pipe(
 			terser().on('error', function (e) {
