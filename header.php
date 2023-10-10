@@ -12,7 +12,7 @@
     <?php wp_body_open(); ?>
 
     <div id="page" class="site min-vh-100 d-flex flex-column">
-        <nav class=" navbar navbar-dark bg-dark fixed-top mt-3">
+        <nav class="navbar navbar-dark fixed-top mt-3" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Offcanvas dark navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"

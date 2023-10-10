@@ -1,0 +1,10 @@
+/* Initial styles for the transparent navbar */
+#navbar {
+	background-color: transparent;
+	transition: background-color 0.5s; /* Add a smooth transition effect */
+}
+
+/* Styles when the navbar becomes black on scroll */
+#navbar.navbar-scrolled {
+	background-color: #000; /* Set your desired background color */
+}
