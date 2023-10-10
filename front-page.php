@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<?php hero_image(); ?>
+
 
 <div id="news_content" class="container mt-5 mb-5">
     <div class="col-md-12 text-center">
@@ -16,5 +18,9 @@
     </div>
 
 </div>
+
+
+
+
 
 <?php get_footer(); ?>
