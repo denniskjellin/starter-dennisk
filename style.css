@@ -11894,7 +11894,7 @@ textarea.form-control-lg {
   color: black;
 }
 .post_item .post_info {
-  color: grey;
+  color: #575757;
   font-weight: 400;
   font-size: 1rem;
   margin: 1rem 0rem 1rem 0rem;
@@ -11912,7 +11912,7 @@ textarea.form-control-lg {
   margin-top: auto;
 }
 .footer_wrapper footer {
-  background-color: black;
+  background-color: #101010;
   color: white;
 }
 
@@ -11939,6 +11939,7 @@ textarea.form-control-lg {
   color: white;
 }
 .hero_image .hero_text h1, .hero_image .hero_text .h1 {
+  font-size: 4rem;
   font-weight: bolder;
 }
 .hero_image .scroll-down-arrow {
@@ -11984,12 +11985,13 @@ textarea.form-control-lg {
   color: #e5e5e5;
 }
 
-.solid_underline_wide::after {
+.underline_wide::after {
   content: "";
   display: block;
-  width: 100%;
+  width: 50%;
   height: 1px;
   background-color: #e5e5e5;
+  opacity: 0.5;
   margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
 }
 
@@ -12022,4 +12024,56 @@ textarea,
 select,
 button {
   font-family: "Poppins", sans-serif;
+}
+
+/* Grey bottom border-dash that goes under the h1-title */
+.solid_underline::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
+}
+
+/* Tiny slash divider */
+.slash_divider::after {
+  content: "/";
+  margin: 0 0.25rem; /* Adjust the spacing as needed */
+  color: #e5e5e5;
+}
+
+.underline_wide::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background-color: #e5e5e5;
+  opacity: 0.5;
+  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
+}
+
+/*--------------------------------------------------------------
+# Custom button styles
+--------------------------------------------------------------*/
+/* Button inside hero-image.php (a tag styled as button */
+.btn-hero {
+  text-transform: uppercase;
+  display: inline-block;
+  border: solid white 3px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.7rem 2rem;
+  border-radius: 1px;
+  transition: 0.4s;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn-hero:hover {
+  background-color: #0bb4aa;
+  color: white;
+  outline: none;
 }

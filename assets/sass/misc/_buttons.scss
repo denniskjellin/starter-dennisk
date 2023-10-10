@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+# Custom button styles
+--------------------------------------------------------------*/
+
+/* Button inside hero-image.php (a tag styled as button */
+.btn-hero {
+	text-transform: uppercase;
+	display: inline-block;
+	border: solid white 3px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 0.7rem 2rem;
+	border-radius: 1px;
+	transition: 0.4s;
+	margin-top: 2rem;
+	cursor: pointer;
+}
+
+.btn-hero:hover {
+	background-color: $hover-details-color;
+	color: white;
+	outline: none;
+}

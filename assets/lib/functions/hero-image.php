@@ -8,11 +8,11 @@ function hero_image() {
 
 <div class="hero_image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(<?php echo $image_url; ?>)">
     <div class="hero_text">
-        <h1 class="site_title solid_underline_wide"><?php echo get_bloginfo('name'); ?></h1>
+        <h1 class="site_title underline_wide"><?php echo get_bloginfo('name'); ?></h1>
         <?php if ($hero_button['hero_button_text'] && $hero_button['hero_button_url']) { ?>
 
         <a href="<?php echo $hero_button['hero_button_url']['url']?>" role="button"
-            class="btn btn-primary"><?php echo $hero_button['hero_button_text'] ;?></a>
+            class="btn btn-hero"><?php echo $hero_button['hero_button_text'] ;?></a>
         <?php
         }
     ?>
