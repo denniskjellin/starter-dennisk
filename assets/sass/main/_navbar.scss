@@ -1,3 +1,11 @@
+.navbar-brand {
+	margin-left: 3rem;
+	font-size: 2rem;
+	font-weight: bolder;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
 /* Initial styles for the transparent navbar */
 #navbar {
 	background-color: transparent;
@@ -7,4 +15,9 @@
 /* Styles when the navbar becomes black on scroll */
 #navbar.navbar-scrolled {
 	background-color: #000; /* Set your desired background color */
+}
+
+.offcanvas-body,
+.offcanvas-header {
+	background-color: black;
 }

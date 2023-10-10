@@ -4,7 +4,8 @@
 
 /* Container div with background-image*/
 .hero_image {
-	height: calc(100vh - 56px);
+	// height: calc(100vh - 56px);
+	height: calc(100vh);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
