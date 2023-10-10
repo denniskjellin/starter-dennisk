@@ -11916,7 +11916,7 @@ textarea.form-control-lg {
   color: #e5e5e5;
 }
 
-.heading::after {
+.post_item::after {
   content: "";
   display: block;
   width: 10%;
@@ -11925,13 +11925,13 @@ textarea.form-control-lg {
   margin: 1.5rem auto;
 }
 
-.post_item::after {
+.heading::after {
   content: "";
   display: block;
   width: 10%;
   height: 1px;
-  background-color: #e5e5e5;
-  margin: 1.5rem auto; /* Center horizontally with 'auto' for left and right margins */
+  background-color: #e5e5e5; /* Set the color as desired */
+  margin: 1.5rem auto;
 }
 
 /*--------------------------------------------------------------

@@ -3,3 +3,12 @@
 --------------------------------------------------------------*/
 
 @import 'site/content/content-post';
+
+.heading::after {
+	content: '';
+	display: block;
+	width: 10%;
+	height: 1px;
+	background-color: $pseudo-detail; /* Set the color as desired */
+	margin: 1.5rem auto;
+}
