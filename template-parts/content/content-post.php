@@ -7,14 +7,17 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('post_item mx-auto'); ?>>
+
     <?php if (has_post_thumbnail()) : ?>
-    <div class="post_thumb"><?php the_post_thumbnail(); ?></div>
+    <div class="post_thumb">
+        <?php the_post_thumbnail(); ?>
+    </div>
     <?php endif; ?>
 
 
     <?php
     if (is_single()) :
-        the_title('<h2 class="post_title">', '</h2>');
+        the_title('<h1 class="entry_title">', '</h1>');
     else :
         the_title(sprintf('<h2 class="post_title"><a class="post_href" href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
     endif;
@@ -29,20 +32,27 @@
     </h6>
 
 
-    <?php
-    if (is_single()) {
-        the_content(); 
-    } else {
+    <?php if (is_single()) 
+    {
+        
+    the_content(); 
+
+    } 
+    else 
+    {
         $excerpt = get_the_excerpt();
         $word_count = str_word_count($excerpt);
 
-        if ($word_count > 55) {
+        if ($word_count > 55) 
+        {
             $limited_excerpt = string_limit_words($excerpt, 55);
              echo $limited_excerpt;
              echo '...';
              echo '<p><a class="link_more_btn" role="button" href="' . get_permalink() . '">Read More</a></p>';
     
-        } else {
+        } 
+        else 
+        {
             the_excerpt();
         }
     }
