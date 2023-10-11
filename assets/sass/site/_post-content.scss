@@ -4,7 +4,7 @@
 .post_item {
 	padding: 1rem 0rem 1rem 0rem;
 	max-width: 85ch;
-	a {
+	.post_href {
 		text-decoration: none;
 		color: #222222;
 	}
@@ -24,6 +24,30 @@
 	}
 }
 
+/*Button styling */
+.link_more_btn {
+	text-transform: uppercase;
+	display: inline-block;
+	border: solid $detail-color 3px;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 1px;
+	padding: 0.65rem 1.6rem;
+	border-radius: 1px;
+	transition: 0.4s;
+	margin-top: 2rem;
+	color: $text-p-color;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link_more_btn:hover {
+	border: solid 3px $hover-details-color;
+	color: $hover-details-color;
+}
+/* end of button */
+
+/* Psudo after content */
 .post_info a::after {
 	content: ' / ';
 	color: $pseudo-detail;
