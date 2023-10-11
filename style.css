@@ -12101,6 +12101,17 @@ button {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
+.post_item .post_thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s;
+  margin-bottom: 0.5rem;
+}
+.post_item .post_thumb img:hover {
+  opacity: 0.8;
+}
 
 /*Button styling */
 .link_more_btn {

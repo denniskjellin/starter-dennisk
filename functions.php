@@ -13,6 +13,8 @@ function string_limit_words($string, $word_limit) {
     return implode(' ', $words);
 }
 
+add_theme_support( 'post-thumbnails' );
+
 // Include scripts
 require get_template_directory().'/assets/inc/scripts.php';
 require get_template_directory().'/assets/lib/functions/hero-image.php';

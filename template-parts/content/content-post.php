@@ -9,15 +9,32 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('post_item mx-auto'); ?>>
 
     <?php if (has_post_thumbnail()) : ?>
-    <div class="post_thumb">
-        <?php the_post_thumbnail(); ?>
-    </div>
-    <?php endif; ?>
 
+    <?php if (is_single()) 
+        {
+        ?>
+    <div class="post_thumb">
+        <?php the_post_thumbnail('large'); ?>
+    </div>
+
+    <?php 
+        } 
+        else 
+        { 
+        ?>
+
+    <div class="post_thumb mb-4">
+        <?php the_post_thumbnail('large'); ?>
+    </div>
+    <?php
+        }
+        ?>
+
+    <?php endif; ?>
 
     <?php
     if (is_single()) :
-        the_title('<h1 class="entry_title">', '</h1>');
+        the_title('<h1 class="entry_title mb-5">', '</h1>');
     else :
         the_title(sprintf('<h2 class="post_title"><a class="post_href" href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>');
     endif;
