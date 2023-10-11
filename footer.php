@@ -7,7 +7,7 @@
                 <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
                     <h5 class="text-uppercase">Wordpress theme</h5>
                     <p>
-                        By Dennis Kjellin </br>
+                        By Dennis Kjellin
                         dennis.kjellin@knowit.se
                     </p>
                 </div>

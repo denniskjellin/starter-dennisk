@@ -12085,6 +12085,9 @@ button {
   text-decoration: none;
   color: #222222;
 }
+.post_item .post_href:hover {
+  color: #0bb4aa;
+}
 .post_item .post_info {
   color: #999999;
   font-weight: 500;

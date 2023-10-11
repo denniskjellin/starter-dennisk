@@ -24,7 +24,7 @@
         ?>
 
     <div class="post_thumb mb-4">
-        <?php the_post_thumbnail('large'); ?>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
     </div>
     <?php
         }

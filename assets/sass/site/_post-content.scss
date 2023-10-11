@@ -9,6 +9,10 @@
 		color: #222222;
 	}
 
+	.post_href:hover {
+		color: $hover-details-color;
+	}
+
 	.post_info {
 		color: $text-detail-color;
 		font-weight: 500;
