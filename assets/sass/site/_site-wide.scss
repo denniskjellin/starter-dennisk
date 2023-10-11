@@ -1,9 +1,6 @@
 /*--------------------------------------------------------------
-# Site styles, imported in 'style.scss' in sass root.
+# Site wide styles
 --------------------------------------------------------------*/
-
-@import 'site/content/content-post';
-
 .page_title::after {
 	content: '';
 	display: block;

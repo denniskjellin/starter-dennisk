@@ -11879,76 +11879,45 @@ textarea.form-control-lg {
 # Theme colors
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# Imported fonts
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+span,
+a,
+li,
+label,
+input,
+textarea,
+select,
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+/*--------------------------------------------------------------
 # Site styles, imported in 'style.scss' in sass root.
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Styling for(post page) & content-post.php
+## Header
 --------------------------------------------------------------*/
-.post_item {
-  padding: 1rem 0rem 1rem 0rem;
-  max-width: 85ch;
-  /* Title of the post */
-}
-.post_item a {
-  text-decoration: none;
-  color: black;
-  font-family: "Montserrat", sans-serif;
-}
-.post_item .post_info {
-  color: #575757;
-  font-weight: 400;
-  font-size: 1rem;
-  margin: 1rem 0rem 1rem 0rem;
-}
-.post_item .post_title {
-  font-size: 1.7rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.post_info a::after {
-  content: " / ";
-  color: #e5e5e5;
-}
-
-.post_info::after {
-  content: " / ";
-  color: #e5e5e5;
-}
-
-.post_item::after {
-  content: "";
-  display: block;
-  width: 15%;
-  height: 1px;
-  background-color: #e5e5e5;
-  margin: 2rem auto;
-}
-
-.page_title::after {
-  content: "";
-  display: block;
-  width: 15%;
-  height: 1px;
-  background-color: #e5e5e5; /* Set the color as desired */
-  margin: 3rem auto;
-}
-
-.page_title {
-  margin-bottom: 2rem;
-}
-
 /*--------------------------------------------------------------
-# Footer styling
+# Site header/navbar styles
 --------------------------------------------------------------*/
-.footer_wrapper {
-  margin-top: auto;
-}
-.footer_wrapper footer {
-  background-color: #101010;
-  color: white;
-}
-
 .navbar-brand {
   margin-left: 3rem;
   font-size: 2rem;
@@ -11973,6 +11942,56 @@ textarea.form-control-lg {
   background-color: black;
 }
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Footer styling
+--------------------------------------------------------------*/
+.footer_wrapper {
+  margin-top: auto;
+}
+.footer_wrapper footer {
+  background-color: #101010;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Custom button styles
+--------------------------------------------------------------*/
+/* Button inside hero-image.php (a tag styled as button */
+.btn-hero {
+  text-transform: uppercase;
+  display: inline-block;
+  border: solid white 3px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.7rem 3rem;
+  border-radius: 1px;
+  transition: 0.4s;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.btn-hero:hover {
+  background-color: #0bb4aa;
+  color: white;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .btn-hero {
+    padding: 0.7rem 2rem;
+  }
+}
+/*--------------------------------------------------------------
+# Hero block
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Hero section component with essential styles
 --------------------------------------------------------------*/
@@ -12050,63 +12069,67 @@ textarea.form-control-lg {
 }
 
 /*--------------------------------------------------------------
-# Imported fonts
+# Post content
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------*/
-/*--------------------------------------------------------------*/
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
+/*--------------------------------------------------------------
+# Styling for(post page) & content-post.php
+--------------------------------------------------------------*/
+.post_item {
+  padding: 1rem 0rem 1rem 0rem;
+  max-width: 85ch;
+  /* Title of the post */
+}
+.post_item a {
+  text-decoration: none;
+  color: black;
   font-family: "Montserrat", sans-serif;
 }
+.post_item .post_info {
+  color: #575757;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.post_item .post_title {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
 
-p,
-span,
-a,
-li,
-label,
-input,
-textarea,
-select,
-button {
-  font-family: "Poppins", sans-serif;
+.post_info a::after {
+  content: " / ";
+  color: #e5e5e5;
+}
+
+.post_info::after {
+  content: " / ";
+  color: #e5e5e5;
+}
+
+.post_item::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 1px;
+  background-color: #e5e5e5;
+  margin: 2rem auto;
 }
 
 /*--------------------------------------------------------------
-# Custom button styles
+# Mixed styles that goes site wide
 --------------------------------------------------------------*/
-/* Button inside hero-image.php (a tag styled as button */
-.btn-hero {
-  text-transform: uppercase;
-  display: inline-block;
-  border: solid white 3px;
-  color: white;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding: 0.7rem 3rem;
-  border-radius: 1px;
-  transition: 0.4s;
-  margin-top: 2rem;
-  cursor: pointer;
+/*--------------------------------------------------------------
+# Site wide styles
+--------------------------------------------------------------*/
+.page_title::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 1px;
+  background-color: #e5e5e5; /* Set the color as desired */
+  margin: 3rem auto;
 }
 
-.btn-hero:hover {
-  background-color: #0bb4aa;
-  color: white;
-  outline: none;
-}
-
-@media (min-width: 768px) {
-  .btn-hero {
-    padding: 0.7rem 2rem;
-  }
+.page_title {
+  margin-bottom: 2rem;
 }
