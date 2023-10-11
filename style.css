@@ -11910,6 +11910,10 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+p {
+  color: #444444;
+}
+
 /*--------------------------------------------------------------
 # Site styles, imported in 'style.scss' in sass root.
 --------------------------------------------------------------*/
@@ -12082,12 +12086,11 @@ button {
 }
 .post_item a {
   text-decoration: none;
-  color: black;
-  font-family: "Montserrat", sans-serif;
+  color: #222222;
 }
 .post_item .post_info {
-  color: #575757;
-  font-weight: 400;
+  color: #999999;
+  font-weight: 500;
   font-size: 1rem;
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -12100,11 +12103,13 @@ button {
 .post_info a::after {
   content: " / ";
   color: #e5e5e5;
+  margin: 0rem 0.2rem;
 }
 
 .post_info::after {
   content: " / ";
   color: #e5e5e5;
+  margin: 0rem 0.2rem;
 }
 
 .post_item::after {

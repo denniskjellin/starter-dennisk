@@ -6,13 +6,12 @@
 	max-width: 85ch;
 	a {
 		text-decoration: none;
-		color: black;
-		font-family: $font-family-montserrat;
+		color: #222222;
 	}
 
 	.post_info {
 		color: $text-detail-color;
-		font-weight: 400;
+		font-weight: 500;
 		font-size: 1rem;
 		margin: 1rem 0rem 1rem 0rem;
 	}
@@ -28,11 +27,13 @@
 .post_info a::after {
 	content: ' / ';
 	color: $pseudo-detail;
+	margin: 0rem 0.2rem;
 }
 
 .post_info::after {
 	content: ' / ';
 	color: $pseudo-detail;
+	margin: 0rem 0.2rem;
 }
 
 .post_item::after {
