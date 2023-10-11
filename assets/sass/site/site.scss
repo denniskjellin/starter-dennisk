@@ -4,11 +4,15 @@
 
 @import 'site/content/content-post';
 
-.heading::after {
+.page_title::after {
 	content: '';
 	display: block;
-	width: 10%;
+	width: 15%;
 	height: 1px;
 	background-color: $pseudo-detail; /* Set the color as desired */
-	margin: 1.5rem auto;
+	margin: 3rem auto;
+}
+
+.page_title {
+	margin-bottom: 2rem;
 }
