@@ -28,12 +28,6 @@
 		margin-bottom: 0.5rem;
 	}
 
-	.entry_title {
-		font-size: 2.5rem;
-		font-weight: 700;
-		margin-bottom: 0.5rem;
-	}
-
 	.post_thumb img {
 		width: 100%;
 		height: 100%;
@@ -57,6 +51,12 @@
 	.post_thumb img:hover {
 		opacity: 0.8;
 	}
+}
+
+.entry_title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
 }
 
 /*Button styling */

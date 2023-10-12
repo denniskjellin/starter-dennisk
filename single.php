@@ -13,7 +13,7 @@ if (has_post_thumbnail()) {
 
     <div class="container meta_wrapper">
         <div class="text_banner col-12">
-            <h1><?php the_title(); ?></h1>
+            <h1 class="entry_title"><?php the_title(); ?></h1>
             <div class="entry_meta post_info">
                 <?php
             $author_id = get_post_field('post_author');

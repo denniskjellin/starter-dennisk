@@ -12101,11 +12101,6 @@ button {
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
-.post_item .entry_title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
 .post_item .post_thumb img {
   width: 100%;
   height: 100%;
@@ -12125,6 +12120,12 @@ button {
 }
 .post_item .post_thumb img:hover {
   opacity: 0.8;
+}
+
+.entry_title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 
 /*Button styling */
