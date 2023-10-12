@@ -13,6 +13,7 @@
 		color: $hover-details-color;
 	}
 
+	/* Post title href to content */
 	.post_info {
 		color: $text-detail-color;
 		font-weight: 500;
@@ -34,6 +35,17 @@
 	}
 
 	.post_thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		transition: transform 0.2s;
+		margin-bottom: 0.5rem;
+		max-width: 500px;
+	}
+
+	/* post img if single */
+	.post_thumb_single img {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;

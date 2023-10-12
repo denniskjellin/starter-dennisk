@@ -6,31 +6,25 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post_item mx-auto'); ?>>
 
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('post_item mx-auto'); ?>>
     <?php if (has_post_thumbnail()) : ?>
 
-    <?php if (is_single()) 
-        {
+    <?php if (is_single()) {
         ?>
-    <div class="post_thumb">
+    <div class="post_thumb_single">
         <?php the_post_thumbnail('large'); ?>
     </div>
 
-    <?php 
-        } 
-        else 
-        { 
+    <?php } else { 
         ?>
-
     <div class="post_thumb mb-4">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large'); ?></a>
+        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('large', array('class' => 'rounded')); ?></a>
     </div>
-    <?php
-        }
-        ?>
-
-    <?php endif; ?>
+    <?php } 
+    ?> <?php endif; ?>
 
     <?php
     if (is_single()) :

@@ -12079,7 +12079,9 @@ button {
 .post_item {
   padding: 1rem 0rem 1rem 0rem;
   max-width: 85ch;
+  /* Post title href to content */
   /* Title of the post */
+  /* post img if single */
 }
 .post_item .post_href {
   text-decoration: none;
@@ -12105,6 +12107,15 @@ button {
   margin-bottom: 0.5rem;
 }
 .post_item .post_thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.2s;
+  margin-bottom: 0.5rem;
+  max-width: 500px;
+}
+.post_item .post_thumb_single img {
   width: 100%;
   height: 100%;
   object-fit: cover;
