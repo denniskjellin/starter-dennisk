@@ -8,8 +8,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		const contentWrapper = document.querySelector('#news_content');
 		const offsetTop = contentWrapper.offsetTop;
 
+		// Adjust for fixed headers or margins
+		const offsetCorrection = 300;
+
 		window.scrollTo({
-			top: offsetTop,
+			top: offsetTop - offsetCorrection,
 			behavior: 'smooth',
 		});
 	});
