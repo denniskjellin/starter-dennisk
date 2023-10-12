@@ -4,21 +4,21 @@
 document.addEventListener('DOMContentLoaded', function () {
 	const scrollArrow = document.querySelector('.scroll-down-arrow');
 
-	scrollArrow.addEventListener('click', function () {
-		const contentWrapper = document.querySelector('#news_content');
-		const offsetTop = contentWrapper.offsetTop;
+	if (scrollArrow) {
+		scrollArrow.addEventListener('click', function () {
+			const contentWrapper = document.querySelector('#news_content');
+			const offsetTop = contentWrapper.offsetTop;
 
-		// Adjust for fixed headers or margins
-		const offsetCorrection = 300;
+			// Adjust for fixed headers or margins
+			const offsetCorrection = 100;
 
-		window.scrollTo({
-			top: offsetTop - offsetCorrection,
-			behavior: 'smooth',
+			window.scrollTo({
+				top: offsetTop - offsetCorrection,
+				behavior: 'smooth',
+			});
 		});
-	});
+	}
 });
-
-console.log('hello world from custom !');
 
 document.addEventListener('DOMContentLoaded', function () {
 	var navbar = document.getElementById('navbar');
