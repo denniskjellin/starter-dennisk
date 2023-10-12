@@ -12074,7 +12074,7 @@ button {
 # Post content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Styling for(post page) & content-post.php
+# Styling for single.php & content-post.php
 --------------------------------------------------------------*/
 .post_item {
   padding: 1rem 0rem 1rem 0rem;
@@ -12180,10 +12180,26 @@ button {
 
 .text_banner {
   position: absolute;
-  color: white;
+  color: #ffffff;
   bottom: 0;
   z-index: 1000;
-  padding: 2rem;
+  padding: 2rem 0;
+  max-width: 85ch;
+}
+
+.entry_meta {
+  opacity: 0.8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.entry_author a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.entry_author a:hover {
+  color: #0bb4aa;
 }
 
 /* Psudo after content */
@@ -12206,6 +12222,13 @@ button {
   height: 1px;
   background-color: #e5e5e5;
   margin: 2rem auto;
+}
+
+.meta_wrapper {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
 /*--------------------------------------------------------------

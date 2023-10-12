@@ -17,7 +17,6 @@
 
 
     <?php if (is_single()) : ?>
-    <h1 class="entry_title mb-5"><?php the_title(); ?></h1>
     <?php else : ?>
     <h2 class="post_title">
         <a class="post_href" href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark">
