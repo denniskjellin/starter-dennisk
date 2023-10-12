@@ -1,6 +1,16 @@
 <?php get_header(); ?>
 <div class="container-fluid p-0 img_banner_single">
-    <?php the_post_thumbnail('full'); ?>
+    <?php
+if (has_post_thumbnail()) {
+    the_post_thumbnail('full');
+} else {
+    ?>
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mountains.jpg" alt="Mountains at dawn">
+    <?php
+}
+?>
+
+
     <div class="container meta_wrapper">
         <div class="text_banner col-12">
             <h1><?php the_title(); ?></h1>
