@@ -21,16 +21,21 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+	var homeUrl = 'http://starter-dennisk.local/';
 	var navbar = document.getElementById('navbar');
 	var scrollOffset = 50; // Adjust this value as needed
 
-	window.addEventListener('scroll', function () {
-		var scrollTop = window.scrollY;
+	if (window.location.href === homeUrl) {
+		window.addEventListener('scroll', function () {
+			var scrollTop = window.scrollY;
 
-		if (scrollTop > scrollOffset) {
-			navbar.classList.add('navbar-scrolled');
-		} else {
-			navbar.classList.remove('navbar-scrolled');
-		}
-	});
+			if (scrollTop > scrollOffset) {
+				navbar.classList.add('navbar-scrolled');
+			} else {
+				navbar.classList.remove('navbar-scrolled');
+			}
+		});
+	} else {
+		navbar.classList.add('navbar-scrolled');
+	}
 });
