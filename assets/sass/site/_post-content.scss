@@ -162,3 +162,18 @@
 	justify-content: center;
 	position: relative;
 }
+
+.entry_footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+.avatar {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+	margin-right: 1rem;
+}
