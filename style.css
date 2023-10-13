@@ -12194,6 +12194,11 @@ p {
   padding: 2rem 0;
   max-width: 85ch;
 }
+@media (max-width: 991.98px) {
+  .text_banner {
+    padding: 2rem 12px;
+  }
+}
 
 .entry_meta {
   opacity: 0.8;
