@@ -14,7 +14,7 @@
     <div id="page" class="site min-vh-100 d-flex flex-column">
         <nav class="navbar navbar-dark fixed-top mt-3" id="navbar">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><?php echo get_bloginfo('name'); ;?></a>
+                <a class="navbar-brand" href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo('name'); ;?></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
                     aria-controls="offcanvasDarkNavbar">
                     <span class="navbar-toggler-icon"></span>
