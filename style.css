@@ -12152,7 +12152,7 @@ p {
   cursor: pointer;
 }
 
-.link_more_btn:hover {
+.more_btn:hover {
   border: solid 3px #0bb4aa;
   color: #0bb4aa;
 }
