@@ -18,3 +18,9 @@ Tags: Bootstrap 5, Bootstrap Icons
 /* Import scss files */
 @import 'vars/vars.scss';
 @import 'site/site.scss';
+
+/* logotype img in navbar*/
+.navbar-brand img {
+	width: 100px;
+	height: 100px;
+}

@@ -12303,3 +12303,9 @@ p {
 .page_title {
   margin-bottom: 2rem;
 }
+
+/* logotype img in navbar*/
+.navbar-brand img {
+  width: 100px;
+  height: 100px;
+}
