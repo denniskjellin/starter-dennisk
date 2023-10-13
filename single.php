@@ -33,7 +33,7 @@ if (has_post_thumbnail()) {
     </div>
 </div>
 
-<div id="news_content" class="container mt-4 mb-4">
+<div id="content_wrapper" class="container mt-4 mb-4">
 
     <div class="col-md-12">
 

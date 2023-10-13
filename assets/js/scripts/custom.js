@@ -1,12 +1,12 @@
 /* 
-/* Function for scrolling to content on #news_content 
+/* Function for scrolling to content on #content_wrapper 
 */
 document.addEventListener('DOMContentLoaded', function () {
 	const scrollArrow = document.querySelector('.scroll-down-arrow');
 
 	if (scrollArrow) {
 		scrollArrow.addEventListener('click', function () {
-			const contentWrapper = document.querySelector('#news_content');
+			const contentWrapper = document.querySelector('#content_wrapper');
 			const offsetTop = contentWrapper.offsetTop;
 
 			// Adjust for fixed headers or margins

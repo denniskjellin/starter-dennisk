@@ -3,7 +3,7 @@
 <?php hero_image(); ?>
 
 
-<div id="news_content" class="container mt-5 mb-5">
+<div id="content_wrapper" class="container mt-5 mb-5">
     <div class="col-md-12 text-center">
         <h2 class="page_title text-uppercase fw-bold">Latest Posts</h2>
         <?php if (have_posts()) : ?>
