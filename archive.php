@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 
-
-
-
 <div id="news_content" class="container mt-5 mb-5">
     <div class="col-md-12 text-center">
-        <h2 class="page_title text-uppercase fw-bold">Archive</h2>
+        <h2 class="page_title text-uppercase fw-bold">author: <span class="text-lowercase"><?php echo esc_html($author_name); ?></span></h2>
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 
