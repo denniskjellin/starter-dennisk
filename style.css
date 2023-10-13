@@ -12079,6 +12079,7 @@ button {
 .post_item {
   padding: 1rem 0rem 1rem 0rem;
   max-width: 85ch;
+  margin: auto;
   /* Post title href to content */
   /* Title of the post */
   /* post img if single */
@@ -12107,7 +12108,7 @@ button {
   object-fit: cover;
   object-position: center;
   transition: transform 0.2s;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   max-width: 500px;
 }
 .post_item .post_thumb_single img {
@@ -12129,7 +12130,7 @@ button {
 }
 
 /*Button styling */
-.link_more_btn {
+.more_btn {
   text-transform: uppercase;
   display: inline-block;
   border: solid #e5e5e5 3px;
@@ -12216,13 +12217,13 @@ button {
   margin: 0rem 0.2rem;
 }
 
-.post_item::after {
+.entry_content::after {
   content: "";
   display: block;
-  width: 15%;
+  width: 40%;
   height: 1px;
   background-color: #e5e5e5;
-  margin: 2rem auto;
+  margin: 5rem auto 0rem auto;
 }
 
 .meta_wrapper {
@@ -12240,6 +12241,7 @@ button {
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
+  margin-top: 2rem;
 }
 .entry_footer .post_author {
   display: flex;
@@ -12267,6 +12269,9 @@ button {
   color: #222222;
   text-decoration: none;
   text-transform: lowercase;
+}
+.entry_footer span a:last-child:hover {
+  color: #0bb4aa;
 }
 
 /*--------------------------------------------------------------
