@@ -61,26 +61,32 @@
     <?php if (is_single()) : ?>
     <footer class="entry_footer">
         <div class="post_author">
-            <h4 class="section_title visually-hidden">
-                Post author</h4>
-            <a class="post_href" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
-                <?php
-            $author_avatar = get_avatar(get_the_author_meta('ID'), 65); 
-            if (strpos($author_avatar, 'default-avatar.png') !== false) {
-                // Author has the default avatar, display your fallback avatar
-                echo '<img src="' . get_template_directory_uri() . '/assets/images/avatar.png" alt="Fallback Avatar" class="avatar">';
-            } else {
-                // Author has a custom avatar, display it
-                echo $author_avatar;
-            }
-            ?>
-            </a>
-            <?php echo esc_html_e('written by '); 
-                the_author_posts_link();
-                ?>
-
+            <div class="col-12">
+                <h4 class="section_title visually-hidden">Post author</h4>
+            </div>
+            <div class="col-12">
+                <a class="post_href" href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+                    <?php
+                    $author_avatar = get_avatar(get_the_author_meta('ID'), 65);
+                    if (strpos($author_avatar, 'default-avatar.png') !== false) {
+                        // Author has the default avatar, display your fallback avatar
+                        echo '<img src="' . get_template_directory_uri() . '/assets/images/avatar.png" alt="Fallback Avatar" class="avatar">';
+                    } else {
+                        // Author has a custom avatar, display it
+                        echo $author_avatar;
+                    }
+                    ?>
+                </a>
+            </div>
+            <span>
+                <?php echo esc_html_e('written by'); ?>
+            </span>
+            <span>
+                <?php the_author_posts_link(); ?>
+            </span>
         </div>
     </footer>
+
     <?php else : ?>
     <?php endif; ?>
 

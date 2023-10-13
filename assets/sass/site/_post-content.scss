@@ -163,17 +163,32 @@
 	position: relative;
 }
 
+/*--------------------------------------------------------------
+# entry footer, author image and author link
+--------------------------------------------------------------*/
 .entry_footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-right: 1rem;
-}
-.avatar {
-	width: 65px;
-	height: 65px;
-	border-radius: 50%;
-	object-fit: cover;
-	object-position: center;
-	margin-right: 1rem;
+
+	.post_author {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+
+	.avatar {
+		width: 65px;
+		height: 65px;
+		border-radius: 50%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	span {
+		text-align: center;
+	}
 }
