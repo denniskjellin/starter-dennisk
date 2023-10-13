@@ -12257,6 +12257,16 @@ button {
 }
 .entry_footer span {
   text-align: center;
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+.entry_footer span a:last-child {
+  margin-top: 0.5rem;
+  color: #222222;
+  text-decoration: none;
+  text-transform: lowercase;
 }
 
 /*--------------------------------------------------------------
