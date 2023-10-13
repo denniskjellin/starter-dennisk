@@ -18,7 +18,7 @@
 
     <!-- if its a single post, show the h2 title as a navigation link -->
     <?php if (!is_single()) : ?>
-    <h2 class="post_title mt-4">
+    <h2 class="h1 fw-bold mt-4">
         <a class="post_href" href="<?php echo esc_url(get_permalink()); ?>" rel="bookmark">
             <?php the_title(); ?>
         </a>
