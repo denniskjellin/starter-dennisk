@@ -11907,7 +11907,13 @@ input,
 textarea,
 select,
 button {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  color: #444444;
+  line-height: 1.9;
+  letter-spacing: normal;
 }
 
 /*--------------------------------------------------------------
