@@ -1,9 +1,18 @@
 <?php get_header(); ?>
 
 
-<div id="content_wrapper" class="container mt-5 mb-5">
+<div id="content_wrapper" class="container pt-5 mt-5 mb-5">
     <div class="col-md-12 text-center">
-        <h2 class="page_title text-uppercase fw-bold">Latest Posts</h2>
+        <?php
+            if(!the_title()) : ?>
+        <h1 class="page_title text-uppercase fw-bold"><?php echo esc_html_e('Page Not Found'); ?></h1>
+        <?php else : ?>
+        <h1 class="page_title text-uppercase fw-bold"><?php the_title(); ?></h1>
+        <?php endif; ?>
+
+
+
+
         <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
 

@@ -24,13 +24,13 @@ if (has_post_thumbnail()) {
 <div id="content_wrapper" class="container mt-4 mb-4">
     <div class="col-md-12">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php get_template_part('template-parts/content/content', 'page'); ?>
-        <?php endwhile; else : ?>
+        <?php get_template_part('template-parts/content/content', 'pages'); ?>
+        <?php endwhile; ?>
+        <?php else : ?>
         <?php get_template_part('template-parts/content/content', 'none'); ?>
         <?php endif; ?>
+
     </div>
-
-
 </div>
 
 <?php get_footer(); ?>

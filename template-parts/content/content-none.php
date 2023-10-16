@@ -24,5 +24,4 @@
         </p>
         <?php endif; ?>
     </div>
-    <p>content none</p>
 </article>
