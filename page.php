@@ -13,7 +13,7 @@ if (has_post_thumbnail()) {
 
 <div class="container meta_wrapper">
     <div class="text_banner col-12">
-        <h1 class="entry_title"><?php the_title(); ?></h1>
+
         <div class="entry_meta">
             <!-- secondary title goes here -->
         </div>
@@ -24,11 +24,12 @@ if (has_post_thumbnail()) {
 <div id="content_wrapper" class="container mt-4 mb-4">
     <div class="col-md-12">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php get_template_part('template-parts/content/content', 'pages'); ?>
+        <?php get_template_part('template-parts/content/content', 'page'); ?>
         <?php endwhile; ?>
         <?php else : ?>
         <?php get_template_part('template-parts/content/content', 'none'); ?>
         <?php endif; ?>
+
 
     </div>
 </div>
